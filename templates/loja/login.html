@@ -1,0 +1,1 @@
+{% extends 'loja/base.html' %}{% block content %}<div class="card"><h1>Entrar</h1><form method="post">{% csrf_token %}<label>Usuário</label><input name="username"><label>Senha</label><input type="password" name="password"><button class="btn">Entrar</button></form></div>{% endblock %}

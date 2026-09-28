@@ -1,0 +1,1 @@
+{% extends 'loja/base.html' %}{% block content %}<h1>Painel administrativo</h1><table><tr><th>Pedido</th><th>Usuário</th><th>Total</th><th>Status</th></tr>{% for p in pedidos %}<tr><td>{{p.id}}</td><td>{{p.usuario.username}}</td><td>{{p.total}}</td><td>{{p.status}}</td></tr>{% endfor %}</table>{% endblock %}

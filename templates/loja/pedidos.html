@@ -1,0 +1,1 @@
+{% extends 'loja/base.html' %}{% block content %}<h1>Meus pedidos</h1><table><tr><th>#</th><th>Data</th><th>Total</th><th>Status</th></tr>{% for p in pedidos %}<tr><td>{{p.id}}</td><td>{{p.criado_em}}</td><td>R$ {{p.total}}</td><td>{{p.status}}</td></tr>{% endfor %}</table>{% endblock %}
